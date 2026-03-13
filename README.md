@@ -91,3 +91,35 @@ my-project
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+`treeviz` est un outil de visualisation d'arborescences de répertoires en ligne de commande, avec support de plusieurs formats de sortie (ASCII, JSON, Markdown), filtrage intelligent par motif, tri et respect des fichiers `.gitignore`. Disponible en tant que package npm global.
+
+### Installation
+```bash
+npm install -g @idirdev/treeviz
+```
+
+### Utilisation
+```bash
+# Arborescence du répertoire courant
+treeviz
+
+# Répertoire spécifique avec profondeur maximale
+treeviz ./src --depth 3
+
+# Afficher les tailles et dates
+treeviz --size --date
+
+# Sortie en format Markdown
+treeviz --format markdown
+
+# Filtrer par motif de fichier
+treeviz --pattern "*.ts"
+```
+
+Consultez la documentation anglaise ci-dessus pour la liste complète des options et des formats de sortie.
